@@ -147,7 +147,7 @@ jobs:
         conda activate "${CONDA_ENV}"
 
         source .ci/scripts/utils.sh
-        install_executorch
+        install_executorch "use-pt-pinned-commit"
 
         .ci/scripts/setup-arm-baremetal-tools.sh
 
@@ -177,7 +177,7 @@ jobs:
         conda activate "${CONDA_ENV}"
 
         source .ci/scripts/utils.sh
-        install_executorch
+        install_executorch "use-pt-pinned-commit"
 
         .ci/scripts/setup-arm-baremetal-tools.sh
 
